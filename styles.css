@@ -1,0 +1,144 @@
+body {
+    text-align: center;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    color: hsl(228, 12%, 48%);
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    margin: 130px auto;
+    width: 600px;
+    height: 480px;
+}
+
+.img {
+    position: relative;
+    width: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-size: 300px 480px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.preview {
+    position: relative;
+    width: 50%;
+    text-align: left;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.texts {
+    position: relative;
+    margin: 30px;
+}
+
+.preview h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+.preview h5 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.preview h1 {
+    font-size: 38px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+.preview p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.preview h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 33px;
+    position: relative;
+}
+
+.preview h2 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    position: absolute;
+    top: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(158, 39%, 25%);
+}
+
+button img {
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+
+/* ATTRIBUTION */
+.attribution { 
+    font-size: 11px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 400px) {
+    body {
+        overflow: scroll;
+        font-size: .8em;
+    }
+    .card {
+        position: relative;
+        flex-direction: column;
+        width: 90%;
+        margin: 30px 20px;
+        height: 800px;
+        column-gap: 0;
+        border-radius: 15px;
+    }
+    .img {
+        width: 100%;
+        background: url(./images/image-product-mobile.jpg);
+        height: 250px;
+        background-size: 340px 250px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .preview {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .attribution {
+        margin: 50px auto 15px;
+    }
+}
