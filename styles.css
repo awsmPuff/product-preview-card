@@ -11,7 +11,7 @@ body {
 .card {
     position: relative;
     display: flex;
-    margin: 130px auto;
+    margin: 150px auto;
     width: 600px;
     height: 480px;
 }
